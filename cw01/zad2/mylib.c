@@ -3,6 +3,8 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
+#include <sys/times.h>
+#include <time.h>
 
 
 /**
@@ -31,9 +33,18 @@ char** create_table(int size)
 */
 int wc_files(char** main_table, int main_size, char args[])
 {
+    // time modifications to measure wc command time itself (impossible outside the function)
+    // and read time (hope I understood task description correctly...)
+    struct tms* p_start = malloc(sizeof(struct tms));
+    struct tms* p_end = malloc(sizeof(struct tms));
+    clock_t start_time;
+
+
     if(main_table == NULL)
     {
         fprintf(stderr, "\nMain table is NULL.\n");
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -49,6 +60,8 @@ int wc_files(char** main_table, int main_size, char args[])
     if(index == -1)
     {
         fprintf(stderr, "\nTable with pointers is full - create a new one.\n");
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -60,6 +73,8 @@ int wc_files(char** main_table, int main_size, char args[])
     if (temp == -1)
     {
         fprintf(stderr, "\nTemporary file could not be created. Errno was %i\n", errno);
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -82,6 +97,8 @@ int wc_files(char** main_table, int main_size, char args[])
     {
         fprintf(stderr, "\nUnable to allocate table with command line command. Errno was %i\n", errno);
         remove(filename);
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -92,13 +109,23 @@ int wc_files(char** main_table, int main_size, char args[])
     sys_arg[lengths[0] + lengths[1] + lengths[2] + lengths[3]] = '\n';
     sys_arg[lengths[0] + lengths[1] + lengths[2] + lengths[3] + 1] = '\0';
 
+    start_time = times(p_start);
+
     int shell_return = system(sys_arg);
+
+    printf("\nCounting for files %s (time of wc command):\n\n", args);
+    printf("real time: %f\n", (double) (times(p_end) - start_time)/CLOCKS_PER_SEC);
+    printf("user time: %f\n", (double) (p_end->tms_utime - p_start->tms_utime)/sysconf(_SC_CLK_TCK));
+    printf("system time: %f\n", (double) (p_end->tms_stime - p_start->tms_stime)/sysconf(_SC_CLK_TCK));
+
 
     if (shell_return == -1)
     {
         fprintf(stderr, "\nCommand line error occurred while executing command: %s Errno was %i\n", sys_arg, errno);
         free(sys_arg);
         remove(filename);
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -107,6 +134,8 @@ int wc_files(char** main_table, int main_size, char args[])
         fprintf(stderr, "\nThe following command does not exist: %s Make sure you are using unix system. Errno was %i\n", sys_arg, errno);
         free(sys_arg);
         remove(filename);
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
@@ -126,10 +155,24 @@ int wc_files(char** main_table, int main_size, char args[])
     {
         fprintf(stderr, "\nUnable to allocate new memory block. Errno was %i\n", errno);
         remove(filename);
+        free(p_start);
+        free(p_end);
         return -1;
     }
 
-    if (read(temp, main_table[index], size) == -1)
+    start_time = times(p_start);
+
+    int read_result = read(temp, main_table[index], size);
+
+    printf("\nWriting to memory from temporary file %ld bytes:\n\n", strlen(main_table[index]));
+    printf("real time: %f\n", (double) (times(p_end) - start_time)/CLOCKS_PER_SEC);
+    printf("user time: %f\n", (double) (p_end->tms_utime - p_start->tms_utime)/sysconf(_SC_CLK_TCK));
+    printf("system time: %f\n", (double) (p_end->tms_stime - p_start->tms_stime)/sysconf(_SC_CLK_TCK));
+
+    free(p_start);
+    free(p_end);
+
+    if (read_result == -1)
     {
         fprintf(stderr, "\nUnable to read from temporary file.Errno was %i\n", errno);
         remove(filename);

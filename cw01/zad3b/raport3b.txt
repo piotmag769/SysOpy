@@ -1,0 +1,672 @@
+
+STATIC TESTS: -Os
+
+Counting for files large4.txt large5.txt small.txt (time of wc command):
+
+real time: 0.000001
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 122 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 122 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 206 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 206 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt large2.txt large3.txt large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000003
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 311 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 311 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000036
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 833 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 833 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 37 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 32 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files medium.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 29 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files small.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 28 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 37 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 32 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 29 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 28 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000019
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Main execution time ("Na przemian  kilkakrotne dodanie i usunięcie zadanej liczby bloków"):
+
+real time: 0.000055
+user time: 0.000000
+system time: 0.000000
+
+DYNAMIC TESTS: -Os
+
+Counting for files large4.txt large5.txt small.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 122 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 122 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000003
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 206 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 206 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt large2.txt large3.txt large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000003
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 311 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 311 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000039
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 833 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 833 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 37 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 32 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files medium.txt (time of wc command):
+
+real time: 0.000001
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 29 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files small.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 28 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 37 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 32 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 29 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 28 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000019
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Main execution time ("Na przemian  kilkakrotne dodanie i usunięcie zadanej liczby bloków"):
+
+real time: 0.000055
+user time: 0.000000
+system time: 0.000000
+
+DLL TESTS: -Os
+
+Counting for files large4.txt large5.txt small.txt (time of wc command):
+
+real time: 0.000001
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 122 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 122 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 206 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 206 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt large2.txt large3.txt large4.txt large5.txt small.txt medium.txt gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 311 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 311 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000037
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 833 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 833 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt (time of wc command):
+
+real time: 0.000002
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 37 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files large1.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 32 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files medium.txt (time of wc command):
+
+real time: 0.000001
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 29 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files small.txt (time of wc command):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 28 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 37 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 32 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 29 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 28 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000018
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000019
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Counting for files gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt gigantic.txt (time of wc command):
+
+real time: 0.000019
+user time: 0.000000
+system time: 0.000000
+
+Writing to memory from temporary file 433 bytes:
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Removing block of size 433 bytes (time of remove_block function):
+
+real time: 0.000000
+user time: 0.000000
+system time: 0.000000
+
+Main execution time ("Na przemian  kilkakrotne dodanie i usunięcie zadanej liczby bloków"):
+
+real time: 0.000056
+user time: 0.000000
+system time: 0.000000
