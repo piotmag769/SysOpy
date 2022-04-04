@@ -1,0 +1,9 @@
+Fork inherits:
+    - ignoring
+    - handling
+    - masking
+
+Exec inherits:
+    - ignoring
+    - masking
+    - pending
