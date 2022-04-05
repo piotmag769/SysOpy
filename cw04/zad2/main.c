@@ -12,11 +12,13 @@ void handler()
     printf("Child process ended/stopped...\n");
 }
 
-void info_handler(int sig_num, siginfo_t *info, void *ucontext)
+
+void info_handler(int sig, siginfo_t *info, void *ucontext)
 {
-    printf("Signal number: %d\n Sending process PI: %d\n Errno value: %d\n", info->si_signo, info->si_pid, info->si_errno);
-    printf("Signal code: %d\n Exit value or signal: %d\n", info->si_code, info->si_status);
+    printf("Signal number: %d\nSending process PI: %d\nErrno value: %d\n", info->si_signo, info->si_pid, info->si_errno);
+    printf("Signal code: %d\nExit value or signal: %d\n", info->si_code, info->si_status);
 }
+
 
 int main(int argc, char** argv)
 {
