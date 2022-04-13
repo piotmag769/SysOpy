@@ -1,0 +1,10 @@
+comp1 = /usr/bin/cat input.txt | /usr/bin/wc -l
+comp3 = /usr/bin/ls
+comp4 = /usr/bin/wc -l
+comp5 = /usr/bin/grep input.txt
+comp6 = /usr/bin/wc -l | /usr/bin/wc -l
+
+comp1
+comp3 | comp4
+comp3 | comp5
+comp1 | comp6

@@ -24,6 +24,10 @@ int get_mode(char* mode_string)
 
 void set_mask()
 {
+    sigset_t temp_mask;
+    sigfillset(&temp_mask);
+    sigprocmask(SIG_SETMASK, &temp_mask, NULL);
+
     sigfillset(&mask);
 
     sigdelset(&mask, SIG2);
