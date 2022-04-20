@@ -1,0 +1,88 @@
+
+
+N:  5 
+producers:  1 
+consumers:  1 
+
+WORKS
+DONE
+
+N:  5 
+producers:  1 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+N:  5 
+producers:  3 
+consumers:  1 
+
+WORKS
+DONE
+
+N:  5 
+producers:  3 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+N:  100 
+producers:  1 
+consumers:  1 
+
+WORKS
+DONE
+
+N:  100 
+producers:  1 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+N:  100 
+producers:  3 
+consumers:  1 
+
+WORKS
+DONE
+
+N:  100 
+producers:  3 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+N:  5000 
+producers:  1 
+consumers:  1 
+
+WORKS
+DONE
+
+N:  5000 
+producers:  1 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+N:  5000 
+producers:  3 
+consumers:  1 
+
+DOESNT WORK
+DONE
+
+N:  5000 
+producers:  3 
+consumers:  3 
+
+DOESNT WORK
+DONE
+
+For N <= PIPE_BUF everything works except when there is multiple consumers.
+For N > PIPE_BUF only version with 1 consumer and 1 producer works.

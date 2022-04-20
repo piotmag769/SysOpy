@@ -19,6 +19,7 @@ int main(int argc, char** argv)
                 if(buffer[0] == ' '|| buffer[0] == '>')
                     fwrite(buffer, sizeof(char), strlen(buffer), input_of_sort);
 
+
             pclose(output_of_mail);
             pclose(input_of_sort);
         }
@@ -49,6 +50,7 @@ int main(int argc, char** argv)
         strcat(command + index, argv[1]);
         FILE *input_of_mail = popen(command, "w");
         fwrite(argv[3], sizeof(char), strlen(argv[3]), input_of_mail);
+        pclose(input_of_mail);
     }
     else
         return 1;
